@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933334 16.933333"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Rastergrafik.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:lockguides="true"
+     inkscape:zoom="4.3295455"
+     inkscape:cx="-62.939632"
+     inkscape:cy="-10.509186"
+     inkscape:window-width="2560"
+     inkscape:window-height="1417"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g85">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1.0583331"
+       spacingy="1.0583333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#49cea4;stop-opacity:1;"
+         offset="0.24441133"
+         id="stop1" />
+      <stop
+         style="stop-color:#66bde0;stop-opacity:1;"
+         offset="0.625"
+         id="stop3" />
+      <stop
+         style="stop-color:#ba8fe1;stop-opacity:1;"
+         offset="0.90000004"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="2.47995"
+       y1="3.976629"
+       x2="14.453382"
+       y2="11.460025"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <path
+       d="M 0.09456055,7.9230472 V 9.0024527 C 3.792799,10.113575 6.8306931,13.151469 7.9418157,16.849707 H 9.0212216 C 10.134433,13.163576 13.162048,10.135962 16.848179,9.0227511 V 7.9230469 C 13.161715,6.8095795 10.134004,3.7813265 9.0211978,0.09466323 l -1.0997027,-1.5e-7 C 6.806405,3.7839602 3.7836594,6.807288 0.09456055,7.9230472 Z"
+       style="display:none;fill:#3634be;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.139972;stroke-dasharray:none"
+       id="path84"
+       inkscape:label="stern mitte" />
+    <g
+       id="g85"
+       transform="matrix(1.414242,0,0,1.414242,-3.5072493,-3.5072493)">
+      <path
+         id="path83"
+         style="display:none;fill:#6fb6d5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.261815;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:label="stern außen"
+         d="M 2.9124837,2.9124837 A 7.8544434,7.8544474 45 0 1 5.1102824,7.2636393 C 6.0025179,6.7606271 6.7525755,6.0036213 7.2564046,5.1097656 A 7.8544434,7.8544474 45 0 1 2.9124837,2.9124837 Z m 11.1083663,0 A 7.8544434,7.8544474 45 0 1 9.6862305,5.1082153 C 10.177833,6.0101459 10.934926,6.7399937 11.826668,7.2331502 A 7.8544461,7.8544474 45 0 1 14.02085,2.9124837 Z M 5.1102824,9.6717611 A 7.8544434,7.8544474 45 0 1 2.9124837,14.02085 7.8544434,7.8544474 45 0 1 7.2522705,11.824084 C 6.7532348,10.927258 6.0091937,10.16794 5.1102824,9.6717611 Z m 6.7153526,0.020154 C 10.939801,10.191583 10.191258,10.93958 9.6913981,11.825635 A 7.8544434,7.8544474 45 0 1 14.02085,14.02085 7.8544461,7.8544474 45 0 1 11.825635,9.6919151 Z" />
+      <path
+         id="path66"
+         style="display:inline;fill:url(#linearGradient2);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.199561;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:label="stern innen"
+         d="M 8.4666667,2.479952 A 5.9868382,5.9868389 0 0 1 2.479952,8.4666667 5.9868382,5.9868389 0 0 1 8.4666667,14.453381 5.9868382,5.9868389 0 0 1 14.453381,8.4666667 5.9868404,5.9868389 0 0 1 8.4666667,2.479952 Z m 0,4.2167969 A 1.7701732,1.7701727 0 0 0 10.236584,8.4666667 1.7701725,1.7701727 0 0 0 8.4666667,10.236584 1.7701725,1.7701727 0 0 0 6.6967489,8.4666667 1.7701725,1.7701727 0 0 0 8.4666667,6.6967489 Z" />
+    </g>
+  </g>
+</svg>
