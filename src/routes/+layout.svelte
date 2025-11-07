@@ -48,7 +48,7 @@
 				<ul class="menu menu-horizontal">
 					<!-- Navbar menu content here -->
 					<li><a>Profile</a></li>
-					<li><a>Newest</a></li>
+					<li><a>Latest</a></li>
 				</ul>
 			</div>
 			<input class="toggle m-2" type="checkbox" bind:checked={theme_dark} />
@@ -58,10 +58,10 @@
 	</div>
 	<div class="drawer-side z-51">
 		<label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-		<ul class="menu min-h-full w-80 bg-base-200 p-4">
+		<ul class="menu min-h-full w-80 bg-base-200 p-4 text-lg">
 			<!-- Sidebar content here -->
 			<li><a>Profile</a></li>
-			<li><a>Newest</a></li>
+			<li><a>Latest</a></li>
 		</ul>
 	</div>
 </div>

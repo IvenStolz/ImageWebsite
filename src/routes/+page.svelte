@@ -1,30 +1,63 @@
 <script>
-	import Card from '$lib/Components/Card.svelte';
-
-	const cards = [
-		{
-			title: 'Bild1',
-			image: 'https://picsum.photos/450/300',
-			description: 'Lorem ipsum hahaha',
-            hashtags: ["hallo", "test"],
-		},
-		{
-			title: 'Bild2',
-			image: 'https://picsum.photos/300/300',
-			description: 'Ganz viel Text... oder auch nicht',
-            hashtags: ["gegenTheo", "exmatrikulation", "dasKufLeiden", "damn", "wasIstBestehen", "finalWeek"],
-		},
-        {
-			title: 'Bild3',
-			image: 'https://picsum.photos/400/200',
-			description: 'Ganz viel Text... oder auch nicht',
-            hashtags: [],
-		}
-	];
+	const passwordPattern = '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}';
 </script>
 
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 m-8 mx-auto">
-  {#each cards as card}
-    <Card {...card} />
-  {/each}
-</div>
+<form action="?/login">
+	<fieldset
+		class="mx-auto my-8 fieldset w-xs rounded-box border border-base-300 bg-base-200 p-4 shadow-xl"
+	>
+		<legend class="fieldset-legend text-lg">Login</legend>
+
+		<p class="label">Username</p>
+		<label class="validator input">
+			<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<g
+					stroke-linejoin="round"
+					stroke-linecap="round"
+					stroke-width="2.5"
+					fill="none"
+					stroke="currentColor"
+				>
+					<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+					<circle cx="12" cy="7" r="4"></circle>
+				</g>
+			</svg>
+			<input
+				type="text"
+				required
+				placeholder="Username"
+				pattern="[A-Za-z][A-Za-z0-9\-]*"
+				minlength="3"
+				maxlength="30"
+				title="Only letters, numbers or dash"
+			/>
+		</label>
+
+		<p class="label">Password</p>
+		<label class="validator input">
+			<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<g
+					stroke-linejoin="round"
+					stroke-linecap="round"
+					stroke-width="2.5"
+					fill="none"
+					stroke="currentColor"
+				>
+					<path
+						d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+					></path>
+					<circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+				</g>
+			</svg>
+			<input type="password" required placeholder="Password" minlength="8" />
+		</label>
+
+		<div class="divider"></div>
+
+		<a href="/profile" class="block w-full">
+			<button class="btn btn-primary w-full"> Login </button>
+		</a>
+
+		<button class="btn mt-2 btn-soft btn-primary">Register instead</button>
+	</fieldset>
+</form>
