@@ -5,7 +5,7 @@ const connectDB = async () => {
 		return;
 	}
 	try {
-		await mongoose.connect('mongodb://127.0.0.1:27017');
+		await mongoose.connect('mongodb://127.0.0.1:27017/StarGramApp');
 	} catch (error) {
 		console.error('Fehler bei der DB-Verbindung', error);
 	}

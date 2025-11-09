@@ -1,0 +1,72 @@
+<script>
+	let showPassword = false;
+	import { enhance } from '$app/forms';
+</script>
+
+<form method="POST" use:enhance>
+	<fieldset
+		class="mx-auto my-8 fieldset w-xs rounded-box border border-base-300 bg-base-200 p-4 shadow-xl"
+	>
+		<legend class="fieldset-legend text-lg">Sign Up</legend>
+
+		<p class="label">Username</p>
+		<label class="validator input">
+			<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<g
+					stroke-linejoin="round"
+					stroke-linecap="round"
+					stroke-width="2.5"
+					fill="none"
+					stroke="currentColor"
+				>
+					<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+					<circle cx="12" cy="7" r="4"></circle>
+				</g>
+			</svg>
+			<input
+				name="username"
+				id="username"
+				type="text"
+				required
+				placeholder="Username"
+				minlength="3"
+				maxlength="30"
+			/>
+		</label>
+
+		<p class="label">Password</p>
+		<label class="validator input">
+			<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<g
+					stroke-linejoin="round"
+					stroke-linecap="round"
+					stroke-width="2.5"
+					fill="none"
+					stroke="currentColor"
+				>
+					<path
+						d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+					></path>
+					<circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+				</g>
+			</svg>
+			<input
+				name="password"
+				id="password"
+				type={showPassword ? 'text' : 'password'}
+				required
+				placeholder="Password"
+				minlength="8"
+			/>
+		</label>
+		<div class="label text-xs">
+			<input type="checkbox" class="checkbox checkbox-sm" bind:checked={showPassword} /> show password
+		</div>
+
+		<div class="divider"></div>
+
+		<button type="submit" class="btn w-full btn-primary">Login</button>
+
+		<button class="btn mt-2 btn-soft btn-primary">Register instead</button>
+	</fieldset>
+</form>

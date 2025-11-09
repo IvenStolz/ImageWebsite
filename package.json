@@ -30,6 +30,7 @@
 	},
 	"dependencies": {
 		"@lucia-auth/adapter-mongodb": "^1.0.3",
+		"@node-rs/argon2": "^2.0.2",
 		"lucia": "^3.2.2",
 		"mongoose": "^8.19.3"
 	}
