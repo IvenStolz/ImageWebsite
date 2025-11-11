@@ -47,7 +47,7 @@
 			<div class="hidden flex-none lg:block">
 				<ul class="menu menu-horizontal">
 					<!-- Navbar menu content here -->
-					 <li><a href="/register">Register Temp</a></li>Ö
+					 <li><a href="/register">Register Temp</a></li>
 					<li><a href="/profile">Profile</a></li>
 					<li><a>Latest</a></li>
 					<li><a>New Post</a></li>

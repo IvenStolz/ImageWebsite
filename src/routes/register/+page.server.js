@@ -35,11 +35,13 @@ export const actions = {
             parallelism: 1
         });
 
-        await User.create({
+        const newUser = await User.create({
             _id: userId,
             username: username,
             hashedPassword: hashedPassword
-        })
+        });
+
+        console.log(newUser);
 
         const session = await lucia.createSession(userId, {});
         const sessionCookie = lucia.createSessionCookie(session.id);
