@@ -7,7 +7,7 @@
 	<fieldset
 		class="mx-auto my-8 fieldset w-xs rounded-box border border-base-300 bg-base-200 p-4 shadow-xl"
 	>
-		<legend class="fieldset-legend text-lg">Sign Up</legend>
+		<legend class="fieldset-legend text-lg">Register</legend>
 
 		<p class="label">Username</p>
 		<label class="validator input">
@@ -65,8 +65,8 @@
 
 		<div class="divider"></div>
 
-		<button type="submit" class="btn w-full btn-primary">Login</button>
+		<button type="submit" class="btn w-full btn-primary">Register</button>
 
-		<button class="btn mt-2 btn-soft btn-primary">Register instead</button>
+		<button class="btn mt-2 btn-soft btn-primary">Login instead</button>
 	</fieldset>
 </form>
