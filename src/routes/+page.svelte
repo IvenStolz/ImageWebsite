@@ -1,5 +1,5 @@
 <script>
-	import Card from '$lib/Components/Card.svelte';
+	import Card from '$lib/Components/CardMockUp.svelte';
 
 	const cards = [
 		{

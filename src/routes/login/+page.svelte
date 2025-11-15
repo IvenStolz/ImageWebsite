@@ -1,8 +1,8 @@
 <script>
-	import {enhance} from "$app/forms";
+	import { enhance } from '$app/forms';
 </script>
 
-<form action="?/login">
+<form method="POST" use:enhance>
 	<fieldset
 		class="mx-auto my-8 fieldset w-xs rounded-box border border-base-300 bg-base-200 p-4 shadow-xl"
 	>
@@ -23,6 +23,7 @@
 				</g>
 			</svg>
 			<input
+				name="username"
 				type="text"
 				required
 				placeholder="Username"
@@ -49,14 +50,12 @@
 					<circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
 				</g>
 			</svg>
-			<input type="password" required placeholder="Password" minlength="8" />
+			<input type="password" required placeholder="Password" name="password" minlength="8" />
 		</label>
 
 		<div class="divider"></div>
 
-		<a href="/profile" class="block w-full">
-			<button class="btn btn-primary w-full"> Login </button>
-		</a>
+		<button type="submit" class="btn w-full btn-primary"> Login </button>
 
 		<button class="btn mt-2 btn-soft btn-primary">Register instead</button>
 	</fieldset>

@@ -1,19 +1,27 @@
 <script>
-  export let title;
-  export let image;
-  export let description;
-  export let hashtags;
+	export let post;
+	$: title = post.title;
+	$: image = post.imageUrl;
+	$: caption = post.caption;
+	$: hashtags = post.hashtags;
+  $: username = post.user.username;
 </script>
 
-<div class="card w-128 h-128 max-w-sm bg-base-100 shadow-xl border border-white/20">
-  <figure><img src={image} alt={title} class="object-cover h-80 w-full " /></figure>
-  <div class="card-body">
-    <h2 class="card-title">{title}</h2>
-    <p>{description}</p>
-    <div class="card-actions justify-end max-h-10 overflow-y-auto flex-wrap-reverse">
-        {#each hashtags as hashtag}
-            <div class="badge badge-soft badge-primary text-blue-400"><p class="font-extrabold">#</p> {hashtag}</div>
-        {/each}
-    </div>
-  </div>
-</div>
+<a href="/posts/{post._id}">
+	<div class="card h-128 w-128 max-w-sm border border-white/20 bg-base-100 shadow-xl">
+		<figure><img src={image} alt={title} class="h-80 w-full object-cover" /></figure>
+		<div class="card-body">
+			<h2 class="card-title">{title}</h2>
+			<p>{caption}</p>
+      <span class="italic text-blue-500/50">Posted by: {username}</span>
+			<div class="card-actions max-h-10 flex-wrap-reverse justify-end overflow-y-auto">
+				{#each hashtags as hashtag}
+					<div class="badge badge-soft text-blue-400 badge-primary">
+						<p class="font-extrabold">#</p>
+						{hashtag}
+					</div>
+				{/each}
+			</div>
+		</div>
+	</div>
+</a>

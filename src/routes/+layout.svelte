@@ -14,7 +14,7 @@
 	let user = $derived(data.user);
 </script>
 
-<div class="drawer">
+<div class="drawer bg-[url($lib/assets/pattern.svg)] bg-repeat">
 	<input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col p-4">
 		<!-- Navbar -->
@@ -53,7 +53,7 @@
 					<li><a href=".">Latest</a></li>
 					{#if user}
 						<li><a href="/profile">Profile - {user.username}</a></li>
-						<li><a>New Post</a></li>
+						<li><a href="/newPost">New Post</a></li>
 						<div class="divider divider-horizontal"></div>
 						<form action="/logout" method="POST" use:enhance>
 							<button class="btn mx-2 btn-soft btn-sm btn-primary" type="submit">Logout</button>
@@ -102,10 +102,10 @@
 			<li><a href=".">Latest</a></li>
 			{#if user}
 				<li><a href="/profile">Profile - {user.username}</a></li>
-				<li><a>New Post</a></li>
+				<li><a href="/newPost">New Post</a></li>
 				<div class="divider"></div>
 				<form action="/logout" method="POST" use:enhance>
-					<button class="btn mx-2 btn-soft btn-primary w-24" type="submit">Logout</button>
+					<button class="btn mx-2 w-24 btn-soft btn-primary" type="submit">Logout</button>
 				</form>
 			{:else}
 				<li><a href="/login">Login</a></li>
