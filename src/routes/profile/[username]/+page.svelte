@@ -32,7 +32,7 @@
 	</div>
 	{#if isOwner}
 		<div class="lg:col-span-2">
-			<a href="/" class="badge badge-outline badge-lg badge-primary">Edit Profile</a>
+			<a href="/profile/edit" class="badge badge-outline badge-lg badge-primary">Edit Profile</a>
 		</div>
 	{/if}
 	{#each posts as post}
