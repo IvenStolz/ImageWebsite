@@ -57,6 +57,6 @@
 
 		<button type="submit" class="btn w-full btn-primary"> Login </button>
 
-		<button class="btn mt-2 btn-soft btn-primary">Register instead</button>
+		<a href="/register" class="btn mt-2 btn-soft btn-primary">Register instead</a>
 	</fieldset>
 </form>

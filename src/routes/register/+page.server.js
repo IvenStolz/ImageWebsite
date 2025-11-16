@@ -50,6 +50,6 @@ export const actions = {
             ...sessionCookie.attributes
         });
 
-        return redirect(302, '/profile');
+        return redirect(302, '/');
     }
 }
