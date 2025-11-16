@@ -12,13 +12,13 @@
     });
 </script>
 
-<a href="/posts/{post._id}">
-	<div class="card h-150 max-w-md border border-white/20 bg-base-100 shadow-xl">
+<div >
+	<div class="card h-150 w-md border border-white/20 bg-base-100 shadow-xl">
 		<div class="flex items-center justify-between px-2 py-2">
-			<div class="badge badge-primary">{username}</div>
+			<a href="/profile/{username}" class="badge badge-primary">{username}</a>
 			<span class="text-gray-400">{formattedDate}</span>
 		</div>
-		<figure><img src={image} alt={title} class="h-70 w-full object-cover" /></figure>
+		<a href="/posts/{post._id}"><img src={image} alt={title} class="h-80 w-full object-cover" /></a>
 		<div class="card-body">
 			<h2 class="card-title">{title}</h2>
 			<p class="line-clamp-2">{caption}</p>
@@ -32,4 +32,4 @@
 			</div>
 		</div>
 	</div>
-</a>
+</div>

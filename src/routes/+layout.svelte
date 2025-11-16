@@ -19,7 +19,7 @@
 	<div class="drawer-content flex flex-col p-4">
 		<!-- Navbar -->
 		<div
-			class="navbar sticky top-4 z-50 mx-auto max-w-7xl rounded-lg border border-white/40 bg-base-300/50 backdrop-blur-sm"
+			class="navbar sticky top-4 z-50 mx-auto max-w-7xl rounded-lg border border-white/40 bg-base-300/50 backdrop-blur-sm shadow-md"
 		>
 			<div class="flex-none lg:hidden">
 				<label
@@ -46,6 +46,21 @@
 				<img src={logo} alt="logo" class="mr-1 ml-2 h-10" />
 			</div>
 			<div class="flex-1 px-2 text-lg font-bold">StarGram</div>
+			<form method="GET" action="/search" class="input mr-4 lg:mr-0">
+				<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<g
+						stroke-linejoin="round"
+						stroke-linecap="round"
+						stroke-width="2.5"
+						fill="none"
+						stroke="currentColor"
+					>
+						<circle cx="11" cy="11" r="8"></circle>
+						<path d="m21 21-4.3-4.3"></path>
+					</g>
+				</svg>
+				<input type="search" class="grow" placeholder="Search" name="q"/>
+			</form>
 			<div class="hidden flex-none lg:block">
 				<ul class="menu menu-horizontal">
 					<!-- Navbar menu content here -->
