@@ -41,17 +41,17 @@
 	>
 		<legend class="fieldset-legend text-lg">Upload Image</legend>
 
-		<label class="label">Title</label>
+		<label class="label" for="title">Title</label>
 		<input type="text" class="input w-full" placeholder="My new..." name="title" bind:value={title} />
 
-		<label class="label">Caption</label>
+		<label class="label" for="caption">Caption</label>
 		<textarea class="textarea w-full" placeholder="Look at this wonderful..." name="caption" bind:value={caption}
 		></textarea>
 
-		<label class="label">Hashtags</label>
+		<label class="label" for="hashtags">Hashtags</label>
 		<input type="text" class="input w-full" placeholder="addHashtags, ..." name="hashtags" bind:value={hashtags} />
 
-		<label class="label">Image</label>
+		<label class="label" for="image">Image</label>
 		<input
 			type="file"
 			class="file-input file-input-ghost w-full"

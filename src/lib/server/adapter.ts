@@ -5,7 +5,9 @@ import mongoose from "mongoose";
 const UserSchema = new mongoose.Schema({
     _id: { type: String, required: true },
     username: { type: String, required: true, unique: true},
-    hashedPassword: { type: String, required: true }
+    hashedPassword: { type: String, required: true },
+    bio: {type: String},
+    profilePictureUrl: {type: String, default: "/profilePictureDefaultImg.png"}
 });
 
 const SessionSchema = new mongoose.Schema({

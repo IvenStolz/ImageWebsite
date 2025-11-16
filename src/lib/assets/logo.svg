@@ -7,7 +7,7 @@
    viewBox="0 0 16.933334 16.933333"
    version="1.1"
    id="svg1"
-   inkscape:export-filename="logoImg.png"
+   inkscape:export-filename="profilePictureDefaultImg.png"
    inkscape:export-xdpi="384"
    inkscape:export-ydpi="384"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
@@ -29,9 +29,9 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:lockguides="true"
-     inkscape:zoom="6.122902"
-     inkscape:cx="103.46401"
-     inkscape:cy="55.774207"
+     inkscape:zoom="8.659091"
+     inkscape:cx="55.490813"
+     inkscape:cy="48.215222"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="1912"
@@ -55,6 +55,35 @@
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips1_1.5"
+       preserveAspectRatio="xMidYMid"
+       id="pattern3"
+       patternTransform="matrix(0.28284271,0.28284271,-0.28284271,0.28284271,0,0)"
+       x="0"
+       y="0" />
+    <pattern
+       inkscape:collect="always"
+       patternUnits="userSpaceOnUse"
+       width="2.5"
+       height="1"
+       patternTransform="translate(0,0) scale(2,2)"
+       preserveAspectRatio="xMidYMid"
+       id="Strips1_1.5"
+       style="fill:#426c7c"
+       inkscape:stockid="Stripes 02 (2:3)"
+       inkscape:isstock="true"
+       inkscape:label="Streifen 02 (2:3)">
+      <rect
+   style="stroke:none"
+   x="0"
+   y="-0.5"
+   width="1"
+   height="2"
+   id="rect140" />
+
+    </pattern>
     <linearGradient
        id="linearGradient39"
        inkscape:collect="always">
@@ -114,6 +143,16 @@
        x2="14.816664"
        y2="14.816667"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient39"
+       id="linearGradient3"
+       gradientUnits="userSpaceOnUse"
+       x1="2.1166663"
+       y1="2.1166666"
+       x2="14.816664"
+       y2="14.816667"
+       gradientTransform="matrix(0.85714245,0,0,0.85714245,1.2095273,1.2095273)" />
   </defs>
   <g
      inkscape:label="Ebene 1"
@@ -163,10 +202,35 @@
   <g
      inkscape:groupmode="layer"
      id="g23"
-     inkscape:label="Layer 2 Kopie">
+     inkscape:label="Layer 2 Kopie"
+     style="display:inline">
+    <rect
+       style="display:none;opacity:1;mix-blend-mode:normal;fill:url(#pattern3);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1"
+       width="16.933332"
+       height="16.933332"
+       x="0"
+       y="0" />
     <path
        d="M 8.4666667,1.0583333 A 7.4083319,7.4083333 0 0 1 1.0583333,8.4666667 7.4083319,7.4083333 0 0 1 8.4666667,15.875 7.4083319,7.4083333 0 0 1 15.875,8.4666667 7.4083319,7.4083333 0 0 1 8.4666667,1.0583333 Z"
        style="fill:none;fill-rule:evenodd;stroke:url(#linearGradient23);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        id="path23" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g3"
+     inkscape:label="Layer 2 Kopie Kopie"
+     style="display:none">
+    <rect
+       style="opacity:1;mix-blend-mode:normal;fill:url(#pattern3);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+       id="rect3"
+       width="16.933332"
+       height="16.933332"
+       x="0"
+       y="0" />
+    <path
+       d="M 8.4666667,2.1166697 A 6.3499957,6.3499969 0 0 1 2.1166697,8.4666667 6.3499957,6.3499969 0 0 1 8.4666667,14.816664 6.3499957,6.3499969 0 0 1 14.816664,8.4666667 6.3499957,6.3499969 0 0 1 8.4666667,2.1166697 Z"
+       style="fill:none;fill-rule:evenodd;stroke:url(#linearGradient3);stroke-width:1.71428;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path3" />
   </g>
 </svg>

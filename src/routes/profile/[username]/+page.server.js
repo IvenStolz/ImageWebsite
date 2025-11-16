@@ -16,7 +16,9 @@ export async function load({params}) {
 
     const userDataWOPassword = {
         id: profileUser._id.toString(),
-        username: profileUser.username
+        username: profileUser.username,
+        bio: profileUser.bio,
+        profilePictureUrl: profileUser.profilePictureUrl || "/profilePictureDefaultImg.png"
     };
 
     return {
