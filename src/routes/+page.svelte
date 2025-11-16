@@ -7,30 +7,35 @@
 			image: 'https://picsum.photos/450/300',
 			description: 'Lorem ipsum hahaha',
             hashtags: ["hallo", "test"],
+			username: "a"
 		},
 		{
 			title: 'Bild2',
 			image: 'https://picsum.photos/300/300',
 			description: 'Ganz viel Text... oder auch nicht',
             hashtags: ["gegenTheo", "exmatrikulation", "dasKufLeiden", "damn", "wasIstBestehen", "finalWeek"],
+			username: "a"
 		},
         {
 			title: 'Bild3',
 			image: 'https://picsum.photos/400/200',
 			description: 'Ganz viel Text... oder auch nicht',
             hashtags: [],
+			username: "a"
 		},
 		{
 			title: 'Bild4',
 			image: 'https://picsum.photos/450/200',
 			description: 'Lorem ipsum hahaha',
             hashtags: ["hallo", "test"],
+			username: "a"
 		},
 		{
 			title: 'Bild5',
 			image: 'https://picsum.photos/400/300',
 			description: 'Ganz viel Text... oder auch nicht',
             hashtags: ["gegenTheo", "exmatrikulation", "dasKufLeiden", "damn", "wasIstBestehen", "finalWeek"],
+			username: "a"
 		},
         {
 			title: 'Bild6',

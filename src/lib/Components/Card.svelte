@@ -4,17 +4,25 @@
 	$: image = post.imageUrl;
 	$: caption = post.caption;
 	$: hashtags = post.hashtags;
-  $: username = post.user.username;
+	$: username = post.user.username;
+	$: formattedDate = new Date(post.creationDate).toLocaleDateString("de-DE", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+    });
 </script>
 
 <a href="/posts/{post._id}">
-	<div class="card h-128 w-128 max-w-sm border border-white/20 bg-base-100 shadow-xl">
-		<figure><img src={image} alt={title} class="h-80 w-full object-cover" /></figure>
+	<div class="card h-150 max-w-md border border-white/20 bg-base-100 shadow-xl">
+		<div class="flex items-center justify-between px-2 py-2">
+			<div class="badge badge-primary">{username}</div>
+			<span class="text-gray-400">{formattedDate}</span>
+		</div>
+		<figure><img src={image} alt={title} class="h-70 w-full object-cover" /></figure>
 		<div class="card-body">
 			<h2 class="card-title">{title}</h2>
-			<p>{caption}</p>
-      <span class="italic text-blue-500/50">Posted by: {username}</span>
-			<div class="card-actions max-h-10 flex-wrap-reverse justify-end overflow-y-auto">
+			<p class="line-clamp-2">{caption}</p>
+			<div class="card-actions max-h-13 flex-wrap-reverse justify-end overflow-y-auto">
 				{#each hashtags as hashtag}
 					<div class="badge badge-soft text-blue-400 badge-primary">
 						<p class="font-extrabold">#</p>

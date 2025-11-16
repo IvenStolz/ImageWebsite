@@ -49,10 +49,9 @@
 			<div class="hidden flex-none lg:block">
 				<ul class="menu menu-horizontal">
 					<!-- Navbar menu content here -->
-					<li><a class="text-blue-500/50" href="/register">Register Temp</a></li>
-					<li><a href=".">Latest</a></li>
+					<li><a href="/">Latest</a></li>
 					{#if user}
-						<li><a href="/profile">Profile - {user.username}</a></li>
+						<li><a href="/profile/{user.username}">Profile - {user.username}</a></li>
 						<li><a href="/newPost">New Post</a></li>
 						<div class="divider divider-horizontal"></div>
 						<form action="/logout" method="POST" use:enhance>
@@ -98,10 +97,9 @@
 			<div class="divider">
 				<img src={logo} alt="logo" class="h-12" />
 			</div>
-			<li><a class="text-blue-500/50" href="/register">Register Temp</a></li>
-			<li><a href=".">Latest</a></li>
+			<li><a href="/">Latest</a></li>
 			{#if user}
-				<li><a href="/profile">Profile - {user.username}</a></li>
+				<li><a href="/profile/{user.username}">Profile - {user.username}</a></li>
 				<li><a href="/newPost">New Post</a></li>
 				<div class="divider"></div>
 				<form action="/logout" method="POST" use:enhance>

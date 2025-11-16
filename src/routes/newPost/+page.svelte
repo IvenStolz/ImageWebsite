@@ -8,6 +8,9 @@
 	let hashtags = $state('');
 	let imageFile = $state();
 
+	let { data } = $props();
+	let user = $derived(data.user);
+
 	let imageURL = $derived.by(() => {
 		if (imageFile && imageFile.length > 0) {
 			return URL.createObjectURL(imageFile[0]);
@@ -22,7 +25,8 @@
 		hashtags: hashtags
 			.split(',')
 			.map((tag) => tag.trim())
-			.filter((tag) => tag.length > 0)
+			.filter((tag) => tag.length > 0),
+		username: user ? user.username : 'Unknown User'
 	});
 </script>
 
